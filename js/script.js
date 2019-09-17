@@ -145,14 +145,14 @@ console.log(getRandomQuote());
 
 function printQuote()
 { var printPress = getRandomQuote();
-  var htmlString = '#';
+  var htmlString = '<div id="quote-box">';
 
   htmlString += '<p class="quote">' + quotes.quote + '</p>';
   htmlString += '<p class="source">' + quotes.source;
-  if (citation === true ) {
+  if (quotes.citation === true ) {
     htmlString += '<span class="citation">' + quotes.citation + '</span>';
   }
-if (year === true) {
+if (quotes.year === true) {
   htmlString += '<span class="year">' + quotes.year + '</span>';
 }
 
