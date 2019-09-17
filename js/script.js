@@ -28,8 +28,8 @@ var quotes = [
 },
 
 { quote: '“Being aware of your crap, and actually overcoming your crap are two very different things.”',
-  source: 'Christina Yang',
-  citation: "Grey's Anatomy",
+  source: 'Dr. Christina Yang',
+  citation: '"Grey\'s Anatomy"',
   year: 2007
 },
 
@@ -149,8 +149,13 @@ function printQuote()
 
   htmlString += '<p class="quote">' + quotes.quote + '</p>';
   htmlString += '<p class="source">' + quotes.source;
-  htmlString += '<span class="citation">' + quotes.citation + '</span>';
+  if (citation === true ) {
+    htmlString += '<span class="citation">' + quotes.citation + '</span>';
+  }
+if (year === true) {
   htmlString += '<span class="year">' + quotes.year + '</span>';
+}
+
   htmlString += '</p>';
 
   return printPress;
