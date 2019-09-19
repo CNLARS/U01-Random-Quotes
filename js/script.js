@@ -24,12 +24,12 @@ var quotes = [
 { quote: '“Think like a queen. A queen is not afraid to fail. Failure is another steppingstone to greatness.”',
   source: 'Oprah Winfrey',
   citation: 'BrainyQuote',
-  year: 'Unknown'
+  year: "Unknown"
 },
 
 { quote: '“Being aware of your crap, and actually overcoming your crap are two very different things.”',
   source: 'Dr. Christina Yang',
-  citation: '"Grey\'s Anatomy"',
+  citation: 'Grey\'s Anatomy',
   year: 2007
 },
 
@@ -51,7 +51,7 @@ var quotes = [
   year: 2007
 },
 
-{ quote: '“There are millions of possibilities for the future! But it’s up to you to choose which becomes reality.”',
+{ quote: '“There are millions of possibilities for the future! But it\’s up to you to choose which becomes reality.”',
   source: 'Garnet',
   citation: 'Steven Universe',
   year: 2015
@@ -65,7 +65,7 @@ var quotes = [
 
 { quote: '“Always stay true to yourself and never let what somebody says distract you from your goals.”',
   source: 'Michelle Obama',
-  citation: '“Michelle Obama: In Her Own Words”',
+  citation: 'Michelle Obama: In Her Own Words',
   year: 2009
 },
 
@@ -145,7 +145,7 @@ console.log(getRandomQuote());
 
 function printQuote()
 { var printPress = getRandomQuote();
-  var htmlString = '<div id="quote-box">';
+  let htmlString = ' ';
 
   htmlString += '<p class="quote">' + quotes.quote + '</p>';
   htmlString += '<p class="source">' + quotes.source;
