@@ -127,16 +127,16 @@ function printQuote() {
   htmlString += '<p class="quote">' + printPress.quote + '</p>';
   htmlString += '<p class="source">' + printPress.source;
   if (printPress.citation === true ) {
-    htmlString += '<span class+="citation">' + printPress.citation + '</span>';
-  }
+    htmlString += '<span class="citation">' + printPress.citation + '</span>';
+  } else {htmlString += '</p>';}
   if (printPress.year === true) {
-  htmlString += '<span class+="year">' + printPress.year + '</span>';
-}
-
+  htmlString += '<span class="year">' + printPress.year + '</span>';
+} else {htmlString += '</p>';}
   htmlString += '</p>';
 
+
 document.getElementById("quote-box").innerHTML = htmlString;
-return htmlString;
+
 }
 
 
