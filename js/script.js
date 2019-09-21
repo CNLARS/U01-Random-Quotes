@@ -30,7 +30,7 @@ var quotes = [
 
 { quote: 'We can push ourselves further. We always have more to give.',
   source: 'Simone Biles',
-  citation: 'Huffington Post (UK) 8 Quotes That Prove Olympic Gymnast Simone Biles Is A Total Badass',
+  citation: '8 Quotes That Prove Olympic Gymnast Simone Biles Is A Total Badass - Huffington Post (UK)',
   year: 2016
 },
 
@@ -126,10 +126,10 @@ function printQuote() {
 
   htmlString += '<p class="quote">' + printPress.quote + '</p>';
   htmlString += '<p class="source">' + printPress.source;
-  if (printPress.citation === true ) {
+  if (printPress.citation) {
     htmlString += '<span class="citation">' + printPress.citation + '</span>';
   } else {htmlString += '</p>';}
-  if (printPress.year === true) {
+  if (printPress.year) {
   htmlString += '<span class="year">' + printPress.year + '</span>';
 } else {htmlString += '</p>';}
   htmlString += '</p>';
